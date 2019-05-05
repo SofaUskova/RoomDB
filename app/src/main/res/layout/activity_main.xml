@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/name"/>
+
+        <EditText
+            android:id="@+id/timeAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/timeAdd" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeAdd"
+            android:layout_alignLeft="@+id/timeAdd"
+            android:onClick="addStudent"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/showAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeAdd"
+            android:layout_toRightOf="@+id/add"
+            android:onClick="showAllStudent"
+            android:text="@string/showAll" />
+
+        <EditText
+            android:id="@+id/findId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/findId" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findId"
+            android:layout_alignLeft="@+id/findId"
+            android:onClick="deleteStudent"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/deleteAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findId"
+            android:layout_toRightOf="@+id/delete"
+            android:onClick="deleteStudentAll"
+            android:text="@string/deleteAll" />
+
+        <EditText
+            android:id="@+id/findIdUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/findIdUpdate" />
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findIdUpdate"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/newName" />
+
+        <EditText
+            android:id="@+id/updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/newTime" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateTime"
+            android:layout_alignLeft="@+id/updateTime"
+            android:onClick="updateStudent"
+            android:text="@string/update" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

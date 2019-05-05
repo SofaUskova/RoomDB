@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Work with Database</string>
+    <string name="name">Name</string>
+    <string name="timeAdd">Time Add</string>
+    <string name="save">Save</string>
+    <string name="showAll">Show All</string>
+    <string name="findId">Find ID</string>
+    <string name="delete">Delete</string>
+    <string name="deleteAll">Delete All</string>
+    <string name="findIdUpdate">Find ID</string>
+    <string name="newName">New Name</string>
+    <string name="newTime">New Time Add</string>
+    <string name="update">Update</string>
+</resources>
